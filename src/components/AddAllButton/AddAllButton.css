@@ -1,0 +1,45 @@
+.addAllButton {
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 150px;
+    height: 40px;
+    background: #eee;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.addAllButton:hover {
+    cursor: pointer;
+}
+
+@media (320px <= width <= 480px) {
+    .addAllButton {
+        padding: 0 3px;
+        width: 65px;
+        height: 30px;
+    }
+
+    .fa-plus {
+        font-size: 10px;
+    }
+}
+
+@media (481px <= width <= 768px) {
+    .addAllButton {
+        padding: 0 4px;
+        width: 90px;
+        height: 40px;
+    }
+
+    .fa-plus {
+        font-size: 11px;
+    }
+}
+
+@media (769px <= width <= 1024px) {
+    .addAllButton {
+        width: 135px;
+    }
+}

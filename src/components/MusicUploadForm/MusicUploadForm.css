@@ -1,0 +1,91 @@
+.musicUploadForm {
+    width: fit-content;
+    height: fit-content;
+    background: #fff;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    z-index: 101;
+}
+
+form {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.form_container {
+    display: flex;
+    gap: 10px;
+
+}
+
+.labels {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.fa-xmark {
+    position: absolute;
+    right: -10px;
+    top: -55px;
+}
+
+.inp {
+    border-radius: 20px;
+    width: 300px;
+    border: 1px solid gray;
+    padding: 12px 15px;
+}
+
+.add-music {
+    border: 1px solid gray;
+    background: #ccc;
+    margin-top: 15px;
+    padding: 7px;
+    width: 60px;
+    border-radius: 10px;
+}
+
+.error {
+    color: red;
+    margin-top: 7px;
+}
+
+@media (320px <= width <= 480px) {
+    .inputs {
+        gap: 5px;
+    }
+    
+    .inp {
+        width: 150px;
+        padding: 7px 10px;
+    }
+    
+    .add-music {
+        margin-top: 10px;
+        padding: 5px;
+        width: 50px;
+        font-size: 12px;
+    }
+
+    label {
+        font-size: 12px;
+    }
+}

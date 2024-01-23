@@ -1,0 +1,55 @@
+.playAllButton {
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 150px;
+    height: 40px;
+    background: #eee;
+    padding: 0 15px 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.play_pause {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 15%;
+}
+
+.playAllButton:hover {
+    cursor: pointer;
+}
+
+@media (320px <= width <= 480px) {
+    .playAllButton {
+        width: 65px;
+        height: 30px;
+        padding: 0 2px 0 15px;
+    }
+
+    .play_pause {
+        font-size: 10px;
+        left: 10%;
+    }
+}
+
+@media (481px <= width <= 768px) {
+    .playAllButton {
+        width: 90px;
+        height: 40px;
+        padding: 0 4px 0 17px;
+    }
+
+    .play_pause {
+        font-size: 11px;
+        left: 11%;
+    }
+}
+
+@media (769px <= width <= 1024px) {
+    .playAllButton {
+        width: 135px;
+    }
+}

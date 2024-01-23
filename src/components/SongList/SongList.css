@@ -1,0 +1,45 @@
+.songList {
+    width: 100%;
+    height: fit-content;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.song_data_names {
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+
+.song_data_names div {
+    height: 100%;
+    background: rgba(128, 128, 128, 0.201);
+}
+
+.songs {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (320px <= width <= 480px) {
+    .song_data_names {
+        height: 35px;
+    }
+
+    .song_data_name {
+        font-size: 13px;
+    }
+}
+
+@media (481px <= width <= 768px) {
+    .song_data_names {
+        height: 40px;
+    }
+
+    .song_data_name {
+        font-size: 14px;
+    }
+}

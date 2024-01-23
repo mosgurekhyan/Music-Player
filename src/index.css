@@ -1,0 +1,175 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:is(.btn, button):hover {
+  cursor: pointer;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+.line {
+  background: gray;
+  width: .5px;
+  height: 100%;
+}
+
+button, input {
+  border: none;
+  outline: none;
+}
+
+.rectangle1, .rectangle2, .rectangle3, .rectangle4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+  border-right: solid #fff;
+}
+
+.rectangle1 {
+  width: 100px;
+  position: relative;
+  padding: 0 10px;
+}
+
+.rectangle2 {
+  width: 500px;
+}
+
+.rectangle3 {
+  width: 540px;
+}
+
+.rectangle4 {
+  width: 130px;
+}
+
+.rectangle5 {
+  width: calc(100% - 1270px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+}
+
+.fa-sort-down {
+  margin-top: -5px;
+}
+
+@media (320px <= width <= 480px) {
+  .fa-sort-down {
+    font-size: 10px;
+  }
+
+  .btn_text {
+    font-size: 10px;
+  }
+
+  .rectangle1, .rectangle2, .rectangle3, .rectangle4 {
+    padding: 0 3px;
+    border-right: 1px solid #fff;
+  } 
+
+  .rectangle1 {
+    width: 40px;
+    padding: 0 5px;
+  }
+  
+  .rectangle2 {
+    width: 80px;
+  }
+  
+  .rectangle3 {
+    width: 80px;
+  }
+  
+  .rectangle4 {
+    width: 40px;
+  }
+  
+  .rectangle5 {
+    width: calc(100% - 240px);
+    padding: 0 5px;
+  }
+}
+
+@media (481px <= width <= 768px) {
+  .fa-sort-down {
+    font-size: 12px;
+  }
+
+  .btn_text {
+    font-size: 14px;
+  }
+
+  .rectangle1, .rectangle2, .rectangle3, .rectangle4 {
+    padding: 0 5px;
+  } 
+
+  .rectangle1 {
+    width: 50px;
+    padding: 0 10px;
+  }
+  
+  .rectangle2 {
+    width: 130px;
+  }
+  
+  .rectangle3 {
+    width: 130px;
+  }
+  
+  .rectangle4 {
+    width: 70px;
+  }
+  
+  .rectangle5 {
+    width: calc(100% - 380px);
+    padding: 0 10px;
+  }
+}
+
+@media (769px <= width <= 1024px) {
+  .rectangle1 {
+    width: 80px;
+  }
+  
+  .rectangle2 {
+    width: 200px;
+  }
+  
+  .rectangle3 {
+    width: 230px;
+  }
+  
+  .rectangle4 {
+    width: 90px;
+  }
+  
+  .rectangle5 {
+    width: calc(100% - 600px);
+  }
+}
+
+@media (1025px <= width <= 1200px) {  
+  .rectangle2 {
+    width: 350px;
+  }
+  
+  .rectangle3 {
+    width: 350px;
+  }
+  
+  .rectangle4 {
+    width: 90px;
+  }
+  
+  .rectangle5 {
+    width: calc(100% - 890px);
+  }
+}
